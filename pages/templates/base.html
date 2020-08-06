@@ -90,35 +90,9 @@
               <div class="classynav">
                 <ul id="nav">
                   <li><a href="/">Home</a></li>
-                  <li><a href="#">Pages</a>
-                    <ul class="dropdown">
-                      <li><a href="/">- Home</a></li>
-                      <li><a href="#">- About Us</a></li>
-                      <li><a href="#">- Service</a></li>
-                      <li><a href="#">- Pricing</a></li>
-                      <li><a href="#">- Blog</a></li>
-                      <li><a href="#">- Blog Details</a></li>
-                      <li><a href="#">- Contact</a></li>
-                      <li><a href="#">- Dropdown</a>
-                        <ul class="dropdown">
-                          <li><a href="#">- Dropdown Item</a></li>
-                          <li><a href="#">- Dropdown Item</a>
-                            <ul class="dropdown">
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">- Dropdown Item</a></li>
-                          <li><a href="#">- Dropdown Item</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Service</a></li>
-                  <li><a href="#">Pricing</a></li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'services' %}">Service</a></li>
+                  <li><a href="{% url 'pricing' %}">Pricing</a></li>
                   <li><a href="#">Blog</a>
                     <ul class="dropdown">
                       <li><a href="#">- Blog</a></li>
@@ -193,7 +167,7 @@
             <!-- Quick Links Nav -->
             <nav>
               <ul class="quick-links">
-                <li><a href="#">About</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="#">FAQs</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
                 <li><a href="#">Policy</a></li>
@@ -201,7 +175,7 @@
                 <li><a href="#">Advisors</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Dentist</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
                 <li><a href="#">Legals</a></li>
               </ul>
             </nav>

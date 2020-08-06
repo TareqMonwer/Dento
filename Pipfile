@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 requests = "*"
 django-environ = "*"
+django-extensions = "*"
 
 [requires]
 python_version = "3.8"

@@ -25,18 +25,6 @@
           </ol>
         </nav>
       </div>
-
-      {% if message_ok %}
-      <div class="col-md-12">
-        <div class="alert alert-info alert-dismissible fade show" role="alert">
-          <strong>{{ message_ok }}</strong>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </div>
-      {% endif %}
-
     </div>
   </div>
 </div>
@@ -77,9 +65,19 @@
       <div class="col-12 col-md-8">
         <div class="contact-form">
           <!-- Section Heading -->
-          <div class="section-heading">
+          <div class="section-heading" id="contact-form-message">
             <h2>Get In Touch</h2>
             <div class="line"></div>
+            {% if message_ok %}
+            <div class="col-md-12 mt-3">
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>{{ message_ok }}</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            {% endif %}
           </div>
           <!-- Form -->
           <form action="{% url 'contact' %}" method="post">
