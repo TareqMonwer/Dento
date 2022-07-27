@@ -25,7 +25,7 @@ def contact(request):
             f'{name} from Dento', #subject
             message, #message
             email, #from
-            ['tareqmonwer137@gmail.com', ], #to
+            ['useurmail@urmail.urext', ], #to
             fail_silently=False,
         )
 
